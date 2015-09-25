@@ -1,4 +1,8 @@
 Rails.application.configure do
+
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.assets.initialize_on_precompile = false
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
